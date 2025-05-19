@@ -9,6 +9,32 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            flavor = "balanced";
+        };
+
+        HML: HML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            flavor = "balanced";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,10 +47,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp A  &kp Z  &kp E     &kp R  &kp T         &kp Y      &kp U      &kp I     &kp O      &kp P     &kp BSPC
-&kp LCTRL  &kp Q  &kp S  &kp D     &kp F  &kp G         &kp H      &kp J      &kp K     &kp L      &kp M     &kp SQT
-&kp LSHFT  &kp W  &kp X  &kp C     &kp V  &kp B         &kp N      &kp COMMA  &kp DOT   &kp COLON  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &kp RETURN    &kp SPACE  &mo 2      &kp RALT
+&kp TAB    &kp A         &kp Z            &kp E                &kp R              &kp T         &kp Y      &kp U               &kp I                 &kp O             &kp P         &kp BSPC
+&kp LCTRL  &HML LCTRL Q  &HML LEFT_ALT S  &HML LEFT_COMMAND D  &HML LEFT_SHIFT F  &kp G         &kp H      &HMR RIGHT_SHIFT J  &HMR RIGHT_COMMAND K  &HMR RIGHT_ALT L  &HMR RCTRL M  &kp SQT
+&kp LSHFT  &kp W         &kp X            &kp C                &kp V              &kp B         &kp N      &kp COMMA           &kp DOT               &kp COLON         &kp FSLH      &kp SEMICOLON
+                                          &mo 3                &mo 1              &kp RETURN    &kp SPACE  &mo 2               &kp RIGHT_ALT
             >;
         };
 
