@@ -48,10 +48,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB            &kp A         &kp Z            &kp E                &kp R              &kp T         &kp Y      &kp U               &kp I                 &kp O             &kp P         &kp BSPC
-&kp DOUBLE_QUOTES  &HML LCTRL Q  &HML LEFT_ALT S  &HML LEFT_COMMAND D  &HML LEFT_SHIFT F  &kp G         &kp H      &HMR RIGHT_SHIFT J  &HMR RIGHT_COMMAND K  &HMR RIGHT_ALT L  &HMR RCTRL M  &kp DOLLAR
-&kp LSHFT          &kp W         &kp X            &kp C                &kp V              &kp B         &kp N      &kp COMMA           &kp DOT               &kp COLON         &kp FSLH      &kp SEMICOLON
-                                                  &mo 3                &mo 1              &kp RETURN    &kp SPACE  &lt 2 ESCAPE        &kp RIGHT_ALT
+&kp TAB            &kp A         &kp Z            &kp E                &kp R              &kp T                      &kp Y                    &kp U               &kp I                 &kp O             &kp P         &kp BSPC
+&kp DOUBLE_QUOTES  &HML LCTRL Q  &HML LEFT_ALT S  &HML LEFT_COMMAND D  &HML LEFT_SHIFT F  &HML LS(LA(LC(LGUI))) G    &HMR LS(LA(LC(RGUI))) H  &HMR RIGHT_SHIFT J  &HMR RIGHT_COMMAND K  &HMR RIGHT_ALT L  &HMR RCTRL M  &kp DOLLAR
+&kp LSHFT          &kp W         &kp X            &kp C                &kp V              &kp B                      &kp N                    &kp COMMA           &kp DOT               &kp COLON         &kp FSLH      &kp SEMICOLON
+                                                  &mo 3                &mo 1              &kp RETURN                 &kp SPACE                &lt 2 ESCAPE        &kp RIGHT_ALT
             >;
         };
 
