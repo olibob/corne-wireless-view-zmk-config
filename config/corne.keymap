@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+#define HYPR (MOD_LCTL | MOD_LSFT | MOD_LALT | MOD_LGUI)
+
 / {
     behaviors {
         HMR: HMR {
